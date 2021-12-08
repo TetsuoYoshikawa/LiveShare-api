@@ -31,5 +31,14 @@ class UsersTableSeeder extends Seeder
             'password' => Hash::make('testtest'),
         ];
         User::insert($param);
+        User::insert($param);
+        $param = [
+            'id' => 2,
+            'name' => 'Tetsuo',
+            'email' => 'tetsuo@test',
+            'image_url' => 'iUldgt6v2AYGCE6u28vukpXP6qMrVvafNLIo2bpG.png',
+            'password' => Hash::make('testtest'),
+        ];
+        User::insert($param);
     }
 }
