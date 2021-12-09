@@ -8,8 +8,6 @@ use App\Http\Controllers\SharesController;
 use App\Http\Controllers\FavoritesController;
 use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\WantsController;
-use App\Http\Controllers\FollowController;
-use App\Models\Follow;
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
