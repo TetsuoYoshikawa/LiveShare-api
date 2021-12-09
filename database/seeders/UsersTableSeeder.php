@@ -19,25 +19,7 @@ class UsersTableSeeder extends Seeder
             'id' => 1,
             'name' => 'admin',
             'email' => 'admin@admin.com',
-            'image_url' => 'iUldgt6v2AYGCE6u28vukpXP6qMrVvafNLIo2bpG.png',
             'password' => Hash::make('adminadmin'),
         ];
-        User::insert($param);
-        $param = [
-            'id' => 2,
-            'name' => 'Test',
-            'email' => 'test@test',
-            'image_url' => 'iUldgt6v2AYGCE6u28vukpXP6qMrVvafNLIo2bpG.png',
-            'password' => Hash::make('testtest'),
-        ];
-        User::insert($param);
-        $param = [
-            'id' => 2,
-            'name' => 'Tetsuo',
-            'email' => 'tetsuo@test',
-            'image_url' => 'iUldgt6v2AYGCE6u28vukpXP6qMrVvafNLIo2bpG.png',
-            'password' => Hash::make('testtest'),
-        ];
-        User::insert($param);
     }
 }
