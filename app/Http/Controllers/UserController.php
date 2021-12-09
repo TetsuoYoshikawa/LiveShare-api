@@ -14,7 +14,7 @@ class UserController extends Controller
         $user = User::with('followUsers')->get();
         return response()->json([
             "message" => 'OK',
-            'data' => $user
+            'data' => $user,
         ], 200);
     }
     public function getProfile($user_id)
