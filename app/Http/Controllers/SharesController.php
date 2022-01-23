@@ -14,7 +14,7 @@ class SharesController extends Controller
 {
     public function get()
     {
-        $items = Share::orderBy('created_at', 'desc')->get();
+        $items = Share::orderBy('date', 'desc')->get();
         return response()->json([
             'message' => 'OK',
             'data' => $items
