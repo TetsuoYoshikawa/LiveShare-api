@@ -9,14 +9,6 @@ use Tymon\JWTAuth\Contracts\Providers\Storage as ProvidersStorage;
 
 class UserController extends Controller
 {
-    public function get()
-    {
-        $user = User::with('followUsers')->get();
-        return response()->json([
-            "message" => 'OK',
-            'data' => $user,
-        ], 200);
-    }
     public function getProfile($user_id)
     {
         $item = User::where('id', $user_id)->get();

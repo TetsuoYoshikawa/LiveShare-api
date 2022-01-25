@@ -21,7 +21,6 @@ Route::group([
     Route::post('/logout', [AuthController::class, 'logout']);
 });
 
-Route::get('/profile', [UserController::class, 'get']);
 Route::get('/profile/{user_id}', [UserController::class, 'getProfile']);
 Route::put('/profile/user/{id}', [UserController::class, 'putProfile']);
 Route::post('/profile', [UserController::class, 'putImage']);
@@ -38,8 +37,8 @@ Route::get('/favorite/{user_id}', [FavoritesController::class, 'get']);
 Route::post('/favorite', [FavoritesController::class, 'post']);
 Route::delete('/favorite', [FavoritesController::class, 'delete']);
 
-Route::get('/wants/{share_id}', [WantsController::class, 'getUser']);
-Route::get('/want/{user_id}', [WantsController::class, 'get']);
+Route::get('/want/share/{share_id}', [WantsController::class, 'getUser']);
+Route::get('/want/user/ {user_id}', [WantsController::class, 'get']);
 Route::post('/want', [WantsController::class, 'post']);
 Route::delete('/want', [WantsController::class, 'delete']);
 
